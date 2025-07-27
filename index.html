@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Color Mind Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Color Mind</h1>
+    <div id="score-timer">
+      <span id="score">Score: 0</span>
+      <span id="timer">60s</span>
+    </div>
+    <div id="question">
+      <span id="color-word">Click 👇</span>
+    </div>
+    <div id="options"></div>
+    <button id="start-btn">Start Game</button>
+    <div id="result"></div>
+  </div>
+  <audio id="correct-audio" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9f027d.mp3"></audio>
+  <audio id="wrong-audio" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b630e2c.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

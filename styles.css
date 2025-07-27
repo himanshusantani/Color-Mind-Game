@@ -1,0 +1,111 @@
+body { 
+  background: linear-gradient(120deg, #c471f5 0%, #fa71cd 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.game-container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.13);
+  text-align: center;
+  min-width: 320px;
+  max-width: 370px;
+  width: 90vw;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  color: #815DF2;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+#score-timer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+#question {
+  margin: 30px 0 20px;
+  min-height: 54px;
+}
+
+#color-word {
+  font-size: 2rem;
+  font-weight: 700;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.option-btn {
+  padding: 17px 0;
+  border: none;
+  border-radius: 12px;
+  background: #f1f1f1;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, transform 0.08s;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.option-btn:hover, .option-btn:focus {
+  background: #ae7be3;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+#start-btn {
+  padding: 13px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #6A4C93;
+  color: #fff;
+  font-size: 1.12rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 8px auto 0 auto;
+  display: block;
+  transition: background .2s, transform 0.07s;
+}
+
+#start-btn:hover, #start-btn:focus {
+  background: #ae7be3;
+  transform: scale(1.04);
+}
+
+#result {
+  margin-top: 16px;
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #746d75;
+  min-height: 26px;
+}
+
+@media (max-width: 500px) {
+  .game-container {
+    padding: 15px 5px;
+    min-width: unset;
+    max-width: 99vw;
+  }
+  #question { min-height: 31px; }
+}
